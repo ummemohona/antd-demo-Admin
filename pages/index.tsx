@@ -1,16 +1,14 @@
 import React from "react";
+import Login from "@containers/auth/login";
 
-import { Cards, Footer, Header, Main } from "@components";
 
 const Home: React.FC = () => {
   return (
     <div
-      style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+      style={{ display: "flex", flexDirection: "column", minHeight: "100vh" , background:"rgba(1,1,1,0.03)"}}
     >
-      <Header />
-      <Main />
-      <Cards />
-      <Footer />
+      <Login/>
+    
     </div>
   );
 };
